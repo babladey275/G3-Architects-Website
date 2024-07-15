@@ -3,11 +3,11 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
-/* * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} */
+}
 /* Shared styles */
 .display-flex {
     display: flex;
@@ -41,6 +41,8 @@ body{
 .navbar {
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .brand {
@@ -75,8 +77,19 @@ body{
     font-size: 4rem;
 }
 
+.banner-description {
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
 .banner-image {
     width: 100%;
     margin-bottom: 45px;
 }
 
+/* Responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .navlinks {
+        flex-direction: column;
+    }
+}
