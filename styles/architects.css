@@ -3,11 +3,11 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 /* Shared styles */
 .display-flex {
     display: flex;
@@ -26,15 +26,26 @@ body{
     color: rgba(114, 114, 114, 1);
 }
 
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+}
+
 /* Header styles */
 .navbar {
     justify-content: space-between;
+    align-items: center;
 }
 
-.nav-links {
-    
+.brand {
+    font-size: 3rem;
 }
-
 .nav-item {
     list-style: none;
     margin-right: 30px;
@@ -43,11 +54,29 @@ body{
 .nav-link {
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.12rem;
 }
 
-.navbar {
+.navbar, .banner {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* banner related styles */
+.banner-content {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-weight: 7oo;
+    font-size: 4rem;
+}
+
+.banner-image {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
